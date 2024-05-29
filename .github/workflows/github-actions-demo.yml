@@ -26,7 +26,6 @@ jobs:
       - name: List files in the repository
         run: |
           echo
-          trigger: pull_request
   Test:
     runs-on: ubuntu-latest
     if: github.event_name == 'workflow_dispatch'
